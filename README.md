@@ -73,5 +73,6 @@ http://localhost:8000/api/documentation
 <img width="1403" alt="imagen" src="https://github.com/user-attachments/assets/529b3330-201b-4e9b-bef9-970a8f03e66f">
 <img width="1404" alt="imagen" src="https://github.com/user-attachments/assets/5b169edd-811d-47c9-b46b-075d4df55bf2">
 <img width="1400" alt="imagen" src="https://github.com/user-attachments/assets/17b37f98-7d2b-4be7-864c-25dc7a1b9b87">
+<img width="801" alt="imagen" src="https://github.com/user-attachments/assets/cc712266-8391-42bb-9654-308c42706766">
 
 
