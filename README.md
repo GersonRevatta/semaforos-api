@@ -68,3 +68,10 @@ http://localhost:8000/api/documentation
 ### Imagenes referenciales de la doc
 <img width="1430" alt="imagen" src="https://github.com/user-attachments/assets/452cd7b2-bcd6-41d1-ad79-3dfa372f1956">
 
+
+
+<img width="1403" alt="imagen" src="https://github.com/user-attachments/assets/529b3330-201b-4e9b-bef9-970a8f03e66f">
+<img width="1404" alt="imagen" src="https://github.com/user-attachments/assets/5b169edd-811d-47c9-b46b-075d4df55bf2">
+<img width="1400" alt="imagen" src="https://github.com/user-attachments/assets/17b37f98-7d2b-4be7-864c-25dc7a1b9b87">
+
+
