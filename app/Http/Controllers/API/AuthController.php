@@ -21,6 +21,22 @@ use JWTAuth;
 class AuthController extends Controller
 {
 
+  /**
+   * @OA\Post(
+   *     path="/v1/auth/login",
+   *     summary="Inicio de sesión",
+   *     tags={"Auth"},
+   *     @OA\RequestBody(
+   *         required=true,
+   *         @OA\JsonContent(
+   *             @OA\Property(property="email", type="string", example="user@example.com"),
+   *             @OA\Property(property="password", type="string", example="password")
+   *         )
+   *     ),
+   *     @OA\Response(response=200, description="Token de acceso generado"),
+   *     @OA\Response(response=401, description="Credenciales inválidas")
+   * )
+   */
   public function login(Request $request)
   {
     $credentials = $request->only('email', 'password');
@@ -31,6 +47,25 @@ class AuthController extends Controller
     return response()->json(['token' => $token]);
   }
 
+
+  /**
+   * @OA\Post(
+   *     path="/v1/auth/register",
+   *     summary="Registro de usuario",
+   *     tags={"Auth"},
+   *     @OA\RequestBody(
+   *         required=true,
+   *         @OA\JsonContent(
+   *             @OA\Property(property="email", type="string", example="user@example.com"),
+   *             @OA\Property(property="password", type="string", example="password"),
+   *             @OA\Property(property="nickname", type="string", example="user123"),
+   *             @OA\Property(property="dni", type="string", example="12345678")
+   *         )
+   *     ),
+   *     @OA\Response(response=201, description="Usuario registrado con éxito"),
+   *     @OA\Response(response=500, description="Error durante el registro")
+   * )
+   */
   public function register(Request $request)
   {
     try {
