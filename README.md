@@ -64,3 +64,7 @@ php artisan migrate:refresh --seed
 http://localhost:8000/api/documentation
 
 ```
+
+### Imagenes referenciales de la doc
+<img width="1430" alt="imagen" src="https://github.com/user-attachments/assets/452cd7b2-bcd6-41d1-ad79-3dfa372f1956">
+
