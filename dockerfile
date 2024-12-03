@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install -y \
     sudo \
     unzip \
     git \
+    iputils-ping \
     && docker-php-ext-configure zip \
     && docker-php-ext-install pdo_sqlite zip
-
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
@@ -31,6 +31,13 @@ COPY . .
 RUN chown -R ${APP_USER}:${APP_GROUP} $WORKDIR \
     && chmod -R 775 storage bootstrap/cache \
     && chmod -R 777 database
+
+
+# Crear el directorio de configuración para psysh y asignar permisos
+RUN mkdir -p /home/${APP_USER}/.config/psysh \
+    && chown -R ${APP_USER}:${APP_GROUP} /home/${APP_USER}/.config/psysh \
+    && chmod -R 700 /home/${APP_USER}/.config/psysh
+
 
 USER ${APP_USER}
 
